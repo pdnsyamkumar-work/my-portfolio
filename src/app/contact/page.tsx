@@ -8,6 +8,9 @@ export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [status, setStatus] = useState<{ type: 'success' | 'error', message: string } | null>(null);
 
+  const isValidEmail = (email: string) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  const isFormValid = formData.name.trim() !== '' && formData.message.trim() !== '' && isValidEmail(formData.email);
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
@@ -142,8 +145,8 @@ export default function Contact() {
 
             <button 
               type="submit" 
-              disabled={isSubmitting}
-              className="w-full bg-brand-purple hover:bg-[#8e5ed1] text-white font-bold py-3 px-4 rounded-lg transition-all shadow-lg shadow-brand-purple/20 disabled:opacity-70 disabled:cursor-not-allowed flex justify-center items-center gap-2"
+              disabled={isSubmitting || !isFormValid}
+              className="w-full bg-brand-purple hover:bg-[#8e5ed1] text-white font-bold py-3 px-4 rounded-lg transition-all shadow-lg shadow-brand-purple/20 disabled:opacity-50 disabled:cursor-not-allowed flex justify-center items-center gap-2"
             >
               {isSubmitting ? (
                 <>
