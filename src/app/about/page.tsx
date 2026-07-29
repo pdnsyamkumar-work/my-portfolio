@@ -59,21 +59,68 @@ export default function About() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-200 mb-6">Experience</h2>
-          <div className="border-l-2 border-brand-purple/30 ml-3 space-y-8">
-            <div className="relative pl-8">
-              <div className="absolute w-4 h-4 bg-brand-purple rounded-full -left-[9px] top-1"></div>
-              <h3 className="text-xl font-bold text-slate-900 dark:text-slate-200">Software Development Engineer in Test (SDET)</h3>
-              <p className="text-brand-purple dark:text-sky-400 font-semibold text-sm mb-2">Company Name | Date - Present</p>
-              <p className="text-slate-600 dark:text-slate-400 text-sm">Building scalable Playwright & TypeScript automation frameworks, enhancing API testing, and integrating reliable CI/CD pipelines.</p>
+          <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-200 mb-6 flex items-center gap-2">
+            <span className="text-2xl">💼</span> Career Journey
+          </h2>
+          <div className="border-l-2 border-brand-purple/30 ml-3 space-y-10">
+            
+            <div className="relative pl-8 pr-4 py-4 -my-4 border border-transparent hover:-translate-y-1 hover:scale-[1.02] hover:bg-white dark:hover:bg-slate-800/80 hover:shadow-lg hover:border-brand-purple dark:hover:border-brand-purple dark:hover:shadow-brand-purple/20 rounded-2xl transition-all duration-300 group">
+              <div className="absolute w-4 h-4 bg-brand-purple rounded-full -left-[9px] top-5 shadow-[0_0_10px_rgba(123,76,190,0.8)]">
+                <div className="absolute inset-0 rounded-full bg-brand-purple animate-ping opacity-75"></div>
+              </div>
+              <h3 className="text-xl font-bold text-slate-900 dark:text-slate-200 group-hover:text-brand-purple dark:group-hover:text-brand-peach transition-colors">Software Development Engineer In Test - II</h3>
+              <p className="text-brand-purple dark:text-brand-peach font-semibold text-sm mb-1">KnackLabs (One Health Assist) | Oct 2025 - Present</p>
+              <ul className="text-slate-600 dark:text-slate-400 text-sm list-disc ml-4 space-y-1 mt-3">
+                <li>Directed manual testing while simultaneously developing Playwright/TypeScript automation framework, achieving 85% test coverage.</li>
+                <li>Mentored 4-member QA team on test case prioritization (P0-P3) and defect triage, reducing resolution time by 30%.</li>
+                <li>Validated multi-tenant RBAC for Admin, Doctor, Staff, and Accountant roles across web and mobile platforms.</li>
+                <li>Executed parallel testing across web portal, Android/iOS apps, and led root cause analysis for 3 critical production defects.</li>
+              </ul>
             </div>
             
-            <div className="relative pl-8">
-              <div className="absolute w-4 h-4 bg-slate-600 rounded-full -left-[9px] top-1"></div>
-              <h3 className="text-xl font-bold text-slate-900 dark:text-slate-200">Bio Medical Service Engineer</h3>
-              <p className="text-slate-500 text-sm mb-2">Prime Agencies | Jan 2017 - May 2018</p>
-              <p className="text-slate-600 dark:text-slate-400 text-sm">Installed, calibrated, and maintained medical equipment in healthcare facilities. Conducted preventive maintenance and troubleshooting for diagnostic imaging systems.</p>
+            <div className="relative pl-8 py-4 -my-4 pr-4 border border-transparent hover:-translate-y-1 hover:scale-[1.02] hover:bg-white dark:hover:bg-slate-800/80 hover:shadow-lg hover:border-brand-purple dark:hover:border-brand-purple dark:hover:shadow-brand-purple/20 rounded-2xl transition-all duration-300 group">
+              <div className="absolute w-4 h-4 bg-brand-purple/70 rounded-full -left-[9px] top-5"></div>
+              <h3 className="text-xl font-bold text-slate-900 dark:text-slate-200 group-hover:text-brand-purple dark:group-hover:text-brand-peach transition-colors">Software Development Engineer In Test - I</h3>
+              <p className="text-brand-purple/80 dark:text-brand-peach/80 font-semibold text-sm mb-1">KnackLabs (Hoichoi TV, eGain, Celito QS) | May 2024 - Sep 2025</p>
+              <ul className="text-slate-600 dark:text-slate-400 text-sm list-disc ml-4 space-y-1 mt-3">
+                <li>Developed Playwright (TypeScript) automation frameworks and integrated them into CI/CD pipelines for faster feedback.</li>
+                <li>Tested REST APIs for Web/OTT platforms and GraphQL for CMS data validation.</li>
+                <li>Conducted manual testing for web, mobile apps, and Smart TV apps (Samsung Tizen, LG WebOS) in Agile sprints.</li>
+                <li>Implemented API fixtures alongside page models (POM) to generate dynamic test data directly from backend services.</li>
+              </ul>
             </div>
+
+            <div className="relative pl-8 py-4 -my-4 pr-4 border border-transparent hover:-translate-y-1 hover:scale-[1.02] hover:bg-white dark:hover:bg-slate-800/80 hover:shadow-lg hover:border-brand-purple dark:hover:border-brand-purple dark:hover:shadow-brand-purple/20 rounded-2xl transition-all duration-300 group">
+              <div className="absolute w-4 h-4 bg-slate-400 dark:bg-slate-600 rounded-full -left-[9px] top-5"></div>
+              <h3 className="text-xl font-bold text-slate-900 dark:text-slate-200 group-hover:text-brand-purple dark:group-hover:text-brand-peach transition-colors">Associate Quality Assurance Engineer</h3>
+              <p className="text-brand-purple/90 dark:text-brand-peach/90 font-semibold text-sm mb-1">KnackLabs (Calibrate) | Mar 2023 - Apr 2024</p>
+              <ul className="text-slate-600 dark:text-slate-400 text-sm list-disc ml-4 space-y-1 mt-3">
+                <li>Designed and executed detailed manual test cases for comprehensive functional validation.</li>
+                <li>Conducted thorough API testing using Postman, validating endpoints and data integrity.</li>
+                <li>Performed load testing to assess system performance and identify bottlenecks.</li>
+              </ul>
+            </div>
+
+            <div className="relative pl-8 py-4 -my-4 pr-4 border border-transparent hover:-translate-y-1 hover:scale-[1.02] hover:bg-white dark:hover:bg-slate-800/80 hover:shadow-lg hover:border-brand-purple dark:hover:border-brand-purple dark:hover:shadow-brand-purple/20 rounded-2xl transition-all duration-300 group">
+              <div className="absolute w-4 h-4 bg-slate-300 dark:bg-slate-700 rounded-full -left-[9px] top-5"></div>
+              <h3 className="text-xl font-bold text-slate-900 dark:text-slate-200 group-hover:text-brand-purple dark:group-hover:text-brand-peach transition-colors">GIS Engineer</h3>
+              <p className="text-brand-purple/70 dark:text-brand-peach/70 font-semibold text-sm mb-1">RMSI Pvt Ltd | Tech Mahindra | Cyient Ltd | Jul 2018 - Mar 2023</p>
+              <ul className="text-slate-600 dark:text-slate-400 text-sm list-disc ml-4 space-y-1 mt-3">
+                <li>Developed geospatial solutions for autonomous vehicles including HD lane mapping and 3D road network modeling.</li>
+                <li>Created precision digital maps and spatial databases using ArcGIS, QGIS, Cartopia, and Fusion.</li>
+              </ul>
+            </div>
+
+            <div className="relative pl-8 py-4 -my-4 pr-4 border border-transparent hover:-translate-y-1 hover:scale-[1.02] hover:bg-white dark:hover:bg-slate-800/80 hover:shadow-lg hover:border-brand-purple dark:hover:border-brand-purple dark:hover:shadow-brand-purple/20 rounded-2xl transition-all duration-300 group">
+              <div className="absolute w-4 h-4 bg-slate-300 dark:bg-slate-800 rounded-full -left-[9px] top-5"></div>
+              <h3 className="text-xl font-bold text-slate-900 dark:text-slate-200 group-hover:text-brand-purple dark:group-hover:text-brand-peach transition-colors">Bio-Medical Service Engineer</h3>
+              <p className="text-brand-purple/60 dark:text-brand-peach/60 font-semibold text-sm mb-1">Prime Agencies | Jan 2017 - May 2018</p>
+              <ul className="text-slate-600 dark:text-slate-400 text-sm list-disc ml-4 space-y-1 mt-3">
+                <li>Installed, calibrated, and maintained medical equipment in healthcare facilities.</li>
+                <li>Conducted preventive maintenance and troubleshooting for diagnostic imaging systems.</li>
+              </ul>
+            </div>
+
           </div>
         </section>
       </div>
