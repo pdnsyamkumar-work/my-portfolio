@@ -1,8 +1,16 @@
-"use client";
+'use client';
 
-import React, { createContext, useContext, useState } from "react";
+import React, { createContext, useContext, useState } from 'react';
 
-export type SkillCategory = "Languages" | "Automation" | "API & Functional" | "DevOps & Tools" | "IDE Tools" | "Methodologies" | "Specialized" | null;
+export type SkillCategory =
+  | 'Languages'
+  | 'Automation'
+  | 'API & Functional'
+  | 'DevOps & Tools'
+  | 'IDE Tools'
+  | 'Methodologies'
+  | 'Specialized'
+  | null;
 
 interface SkillHoverContextType {
   hoveredCategory: SkillCategory;
@@ -24,7 +32,7 @@ export function SkillHoverProvider({ children }: { children: React.ReactNode }) 
 export function useSkillHover() {
   const context = useContext(SkillHoverContext);
   if (context === undefined) {
-    throw new Error("useSkillHover must be used within a SkillHoverProvider");
+    throw new Error('useSkillHover must be used within a SkillHoverProvider');
   }
   return context;
 }

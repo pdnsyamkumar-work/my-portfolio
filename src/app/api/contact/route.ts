@@ -7,7 +7,7 @@ const resend = apiKey ? new Resend(apiKey) : null;
 export async function POST(request: Request) {
   try {
     if (!resend) {
-      console.error("CRITICAL ERROR: RESEND_API_KEY is not set in environment variables.");
+      console.error('CRITICAL ERROR: RESEND_API_KEY is not set in environment variables.');
       return NextResponse.json(
         { error: 'Server misconfiguration: Email service is not set up.' },
         { status: 500 }
@@ -28,10 +28,7 @@ export async function POST(request: Request) {
     // Basic email validation regex
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
-      return NextResponse.json(
-        { error: 'Please provide a valid email address.' },
-        { status: 400 }
-      );
+      return NextResponse.json({ error: 'Please provide a valid email address.' }, { status: 400 });
     }
 
     // Send Email using Resend
@@ -62,10 +59,7 @@ export async function POST(request: Request) {
 
     if (error) {
       console.error('Resend Error:', error);
-      return NextResponse.json(
-        { error: error.message },
-        { status: 500 }
-      );
+      return NextResponse.json({ error: error.message }, { status: 500 });
     }
 
     return NextResponse.json({ success: true, data });
