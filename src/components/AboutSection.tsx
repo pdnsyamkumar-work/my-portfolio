@@ -1,9 +1,9 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 
 export default function AboutSection() {
-  const cardVariants = {
+  const cardVariants: Variants = {
     initial: { opacity: 0, y: 20 },
     animate: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' } },
     hover: {
@@ -43,27 +43,34 @@ export default function AboutSection() {
           </h3>
           <div className="space-y-4 text-slate-600 dark:text-slate-300 leading-relaxed text-sm lg:text-base">
             <p>
-              I am a Software Development Engineer in Test (SDET) with over 8.5 years of total
-              professional experience. This includes{' '}
-              <strong className="text-brand-purple">3.5+</strong> years of relevant experience
-              specializing in building robust{' '}
+              I am a Software Development Engineer in Test (SDET) with{' '}
+              <strong className="text-brand-purple">3.5+</strong> years of hands-on experience in
+              building scalable automation frameworks using{' '}
               <strong className="text-brand-purple">Playwright</strong> and{' '}
-              <strong className="text-brand-purple">TypeScript</strong> automation frameworks for
-              web and API services, and 5 years of prior engineering experience.
+              <strong className="text-brand-purple">TypeScript</strong> for web and API
+              applications.
             </p>
             <p>
-              I recently architected a modular framework that cut regression cycle time by 40% and
-              tripled test execution speed through parallelization. By integrating automated suites
-              into <strong className="text-brand-purple">CI/CD</strong> pipelines using{' '}
-              <strong className="text-brand-purple">Azure DevOps</strong> and applying shift-left
-              testing, I help teams achieve faster, more reliable release cycles.
+              I specialize in designing reliable, high-performance test systems that reduce regression
+              time, improve release confidence, and eliminate flaky tests. I have successfully
+              delivered modular automation frameworks that reduced regression cycles by 40%, achieved
+              85% test coverage, and accelerated defect resolution by 30% through{' '}
+              <strong className="text-brand-purple">CI/CD-integrated testing</strong>.
             </p>
             <p>
-              I am passionate about eliminating manual bottlenecks and reducing flaky tests. I have
-              successfully achieved <strong className="text-brand-purple">85% test coverage</strong>{' '}
-              and reduced defect resolution time by 30% via CI/CD-integrated{' '}
-              <strong className="text-brand-purple">API validation</strong>, ensuring robust and
-              on-schedule releases.
+              Prior to transitioning into software testing, I gained ~5 years of experience across
+              diverse engineering domains, including GIS and biomedical systems. This background
+              strengthened my problem-solving mindset, attention to detail, and system-level
+              thinking.
+            </p>
+            <p>
+              Overall, I bring <strong className="text-brand-purple">8.5+</strong> years of
+              professional experience, combining domain expertise with modern test engineering
+              practices.
+            </p>
+            <p>
+              I focus on building automation that empowers teams — not just finding bugs, but enabling
+              faster, more reliable software delivery.
             </p>
           </div>
         </motion.div>
