@@ -19,34 +19,43 @@ export default function ContactSection() {
     formData.name.trim() !== '' && formData.message.trim() !== '' && isValidEmail(formData.email);
 
   const triggerConfetti = () => {
-    const duration = 3000;
-    const end = Date.now() + duration;
+    try {
+      const duration = 3000;
+      const end = Date.now() + duration;
 
-    const frame = () => {
-      confetti({
-        particleCount: 5,
-        angle: 60,
-        spread: 55,
-        origin: { x: 0 },
-        colors: ['#8b5cf6', '#f43f5e', '#10b981'],
-      });
-      confetti({
-        particleCount: 5,
-        angle: 120,
-        spread: 55,
-        origin: { x: 1 },
-        colors: ['#8b5cf6', '#f43f5e', '#10b981'],
-      });
+      const frame = () => {
+        try {
+          confetti({
+            particleCount: 5,
+            angle: 60,
+            spread: 55,
+            origin: { x: 0 },
+            colors: ['#8b5cf6', '#f43f5e', '#10b981'],
+          });
+          confetti({
+            particleCount: 5,
+            angle: 120,
+            spread: 55,
+            origin: { x: 1 },
+            colors: ['#8b5cf6', '#f43f5e', '#10b981'],
+          });
+        } catch (e) {
+          // Ignore confetti errors on unsupported mobile browsers
+        }
 
-      if (Date.now() < end) {
-        requestAnimationFrame(frame);
-      }
-    };
-    frame();
+        if (Date.now() < end) {
+          requestAnimationFrame(frame);
+        }
+      };
+      frame();
+    } catch (error) {
+      // Safely ignore
+    }
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
+  const handleSubmit = async (e?: React.FormEvent | React.MouseEvent) => {
+    if (e && e.preventDefault) e.preventDefault();
+    
     setIsSubmitting(true);
     setErrorMsg('');
 
@@ -69,7 +78,8 @@ export default function ContactSection() {
           setFormData({ name: '', email: '', message: '' });
         }, 20000);
       } else {
-        setErrorMsg(`❌ ${data.error || 'Failed to send message'}`);
+        const errorText = data.error ? String(data.error) : 'Failed to send message';
+        setErrorMsg(`❌ ${errorText}`);
       }
     } catch (err) {
       setErrorMsg('❌ Network error. Please try again later.');
@@ -182,7 +192,7 @@ export default function ContactSection() {
           initial={{ opacity: 0, x: 30 }}
           animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 30 }}
           transition={{ duration: 0.6 }}
-          className="bg-white/80 dark:bg-slate-800/40 p-8 rounded-2xl border border-slate-200 dark:border-slate-700/50 shadow-md backdrop-blur-sm relative overflow-hidden"
+          className="bg-white/80 dark:bg-slate-800/40 p-8 rounded-2xl border border-slate-200 dark:border-slate-700/50 shadow-md backdrop-blur-sm relative overflow-hidden min-h-[450px] flex flex-col justify-center"
         >
           <AnimatePresence mode="wait">
             {!isSuccess ? (
