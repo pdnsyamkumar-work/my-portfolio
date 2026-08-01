@@ -25,7 +25,7 @@ export default function AboutSection() {
         transition={{ duration: 0.5 }}
         className="text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white mb-12 text-center"
       >
-        About <span className="text-brand-purple">Me</span>
+        About <span className="text-brand-purple">Me</span> 👨‍💻
       </motion.h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -43,7 +43,7 @@ export default function AboutSection() {
           </h3>
           <div className="space-y-4 text-slate-600 dark:text-slate-300 leading-relaxed text-sm lg:text-base">
             <p>
-              I am a Software Development Engineer in Test (SDET) with{' '}
+              Software Development Engineer in Test (SDET) with{' '}
               <strong className="text-brand-purple">3.5+</strong> years of hands-on experience in
               building scalable automation frameworks using{' '}
               <strong className="text-brand-purple">Playwright</strong> and{' '}
@@ -95,24 +95,16 @@ export default function AboutSection() {
           </h3>
           <div className="space-y-4 text-slate-600 dark:text-slate-300 leading-relaxed text-sm lg:text-base">
             <p>
-              Beyond the code, I am a dedicated problem solver who views software quality not just
-              as finding bugs, but as ensuring an exceptional end-user experience. I approach
-              testing with an <strong className="text-brand-purple">engineering mindset</strong>
-              —building tools that empower developers rather than just acting as a gatekeeper.
+              Beyond writing test cases, I see quality as a core part of engineering — not a phase. I approach testing with a <strong className="text-brand-purple">systems mindset</strong>, focusing on building scalable solutions that prevent issues rather than just detecting them.
             </p>
             <p>
-              Having extensive experience with both manual testing and{' '}
-              <strong className="text-brand-purple">advanced automation</strong>, I know how to
-              strike the right balance between exhaustive{' '}
-              <strong className="text-brand-purple">exploratory testing</strong> and targeted,
-              high-speed <strong className="text-brand-purple">automated regression</strong>.
+              I enjoy designing automation that integrates seamlessly into development workflows, enabling faster feedback, stable releases, and confident deployments. To me, testing is most effective when it empowers developers, not slows them down.
             </p>
             <p>
-              When I'm not architecting test frameworks or debugging flaky pipelines, I enjoy{' '}
-              <strong className="text-brand-purple">continuous learning</strong> and exploring the
-              latest trends in test automation,{' '}
-              <strong className="text-brand-purple">DevOps</strong>, and web development
-              technologies.
+              With experience across both manual and automated testing, I understand where human insight matters and where automation delivers the most value. I aim to strike the right balance between <strong className="text-brand-purple">exploratory thinking</strong> and high-speed, reliable <strong className="text-brand-purple">automation</strong>.
+            </p>
+            <p>
+              Outside of building frameworks and debugging pipelines, I’m constantly exploring better ways to improve quality — from modern test architecture to <strong className="text-brand-purple">CI/CD practices</strong> and developer experience.
             </p>
           </div>
         </motion.div>
