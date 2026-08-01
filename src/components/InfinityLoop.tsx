@@ -140,9 +140,9 @@ export default function InfinityLoop() {
             {/* Node Label */}
             <motion.text
               x={node.x}
-              y={node.y > 200 ? node.y + 34 : node.y - 24}
+              y={node.y > 200 ? node.y + 38 : node.y - 26}
               textAnchor="middle"
-              className="text-sm font-bold text-slate-700 dark:text-slate-300 pointer-events-none select-none"
+              className="text-lg font-bold text-slate-700 dark:text-slate-300 pointer-events-none select-none"
               fill="currentColor"
               animate={{
                 opacity: hoveredNode === node.id || node.highlight ? 1 : 0.7,
@@ -160,19 +160,19 @@ export default function InfinityLoop() {
                 transition={{ duration: 0.3 }}
               >
                 <rect
-                  x={node.x - 90}
-                  y={node.y + 45}
-                  width="180"
-                  height="28"
-                  rx="14"
+                  x={node.x - 120}
+                  y={node.y + 48}
+                  width="240"
+                  height="36"
+                  rx="18"
                   fill="#3b82f6"
                   className="shadow-lg"
                 />
                 <text
                   x={node.x}
-                  y={node.y + 63}
+                  y={node.y + 72}
                   textAnchor="middle"
-                  className="text-xs font-bold fill-white pointer-events-none"
+                  className="text-base font-bold fill-white pointer-events-none"
                 >
                   This is where I excel 🚀
                 </text>
@@ -183,10 +183,10 @@ export default function InfinityLoop() {
 
         {/* Center Content in SVG to perfectly scale with nodes (placed here to render ON TOP of the loop) */}
         <foreignObject
-          x="150"
-          y="110"
-          width="500"
-          height="180"
+          x="100"
+          y="90"
+          width="600"
+          height="220"
           className="pointer-events-none z-10"
         >
           <div className="flex flex-col items-center justify-center w-full h-full p-4">
@@ -197,14 +197,14 @@ export default function InfinityLoop() {
                 scale: hoveredNode === 'test' ? 1 : 0.8,
               }}
               transition={{ duration: 0.3 }}
-              className="bg-white/30 dark:bg-slate-900/60 backdrop-blur-md px-6 py-4 rounded-2xl border border-blue-500/50 bg-blue-50/50 dark:bg-blue-900/20 shadow-xl shadow-blue-500/20 flex flex-col items-center"
+              className="bg-white/40 dark:bg-slate-900/70 backdrop-blur-md px-8 py-5 rounded-3xl border border-blue-500/50 bg-blue-50/50 dark:bg-blue-900/30 shadow-2xl shadow-blue-500/20 flex flex-col items-center w-full max-w-[500px]"
             >
-              <h2 className="text-xl md:text-2xl font-extrabold text-slate-900 dark:text-white mb-1 whitespace-nowrap">
+              <h2 className="text-3xl font-extrabold text-slate-900 dark:text-white mb-2 whitespace-nowrap">
                 Syam Kumar
               </h2>
-              <p className="text-blue-600 dark:text-blue-400 font-bold text-xs md:text-sm whitespace-nowrap mt-1">
-                SDET | Playwright | TypeScript | REST & GraphQL | CI/CD
-              </p>
+              <div className="text-blue-600 dark:text-blue-400 font-bold text-lg text-center flex flex-wrap justify-center gap-x-2 gap-y-1 mt-1 leading-snug">
+                <span>SDET</span> <span className="opacity-40">|</span> <span>Playwright</span> <span className="opacity-40">|</span> <span>TypeScript</span> <span className="opacity-40">|</span> <span>REST & GraphQL</span> <span className="opacity-40">|</span> <span>CI/CD</span>
+              </div>
             </motion.div>
           </div>
         </foreignObject>
