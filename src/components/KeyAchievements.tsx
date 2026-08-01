@@ -1,6 +1,6 @@
 'use client';
 
-import { motion, useInView } from 'framer-motion';
+import { motion, useInView, Variants } from 'framer-motion';
 import { useEffect, useState, useRef } from 'react';
 
 const achievements = [
@@ -51,7 +51,7 @@ const Counter = ({ value, isFloat = false, isString = false, suffix }: any) => {
 };
 
 export default function KeyAchievements() {
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -59,7 +59,7 @@ export default function KeyAchievements() {
     },
   };
 
-  const cardVariants = {
+  const cardVariants: Variants = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' } },
     hover: {
