@@ -9,7 +9,7 @@ const personalProjects = [
   {
     title: 'playwright-base (Open Source)',
     description:
-      'An open-source Playwright utility library featuring BaseTestData and BaseApi abstractions. It standardizes API contract validation, cuts boilerplate by up to 50%, and enables a modular, maintainable automation architecture for enterprise use cases.',
+      'An open-source Playwright utility library featuring BaseTestData and BaseApi abstractions. It standardizes API contract validation, cuts boilerplate by up to 20%, and includes a published NPM package with comprehensive documentation to enable a modular, maintainable automation architecture.',
     tech: ['Playwright', 'TypeScript', 'API Testing'],
     link: 'https://www.npmjs.com/settings/pdnsyamkumar/packages',
     linkType: 'npm',
