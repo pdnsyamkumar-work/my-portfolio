@@ -13,6 +13,7 @@ const personalProjects = [
     tech: ['Playwright', 'TypeScript', 'API Testing'],
     link: 'https://www.npmjs.com/settings/pdnsyamkumar/packages',
     linkType: 'npm',
+    docLink: 'https://playwright-npm-packages-one.vercel.app/',
   },
 ];
 
@@ -65,7 +66,7 @@ const ProjectCard = ({ project }: { project: any }) => (
         </span>
       ))}
     </div>
-    <div className="flex gap-6 mt-auto">
+    <div className="flex flex-wrap gap-6 mt-auto">
       {project.link && (
         <Link
           href={project.link}
@@ -89,6 +90,19 @@ const ProjectCard = ({ project }: { project: any }) => (
               View on GitHub
             </>
           )}
+        </Link>
+      )}
+      {project.docLink && (
+        <Link
+          href={project.docLink}
+          target="_blank"
+          className="text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-brand-purple dark:hover:text-white flex items-center gap-2 transition-colors"
+        >
+          <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+          </svg>
+          View Documentation
         </Link>
       )}
     </div>
