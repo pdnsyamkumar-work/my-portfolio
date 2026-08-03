@@ -2,6 +2,7 @@
 
 import { useState, useRef } from 'react';
 import { FaEnvelope, FaLinkedin, FaGithub, FaFilePdf } from 'react-icons/fa';
+import { SiGmail } from 'react-icons/si';
 import { motion, AnimatePresence, useInView } from 'framer-motion';
 import confetti from 'canvas-confetti';
 
@@ -123,9 +124,9 @@ export default function ContactSection() {
             Contact Information
           </h3>
           <div className="space-y-6">
-            <a href="mailto:pdnsyamkumar@gmail.com" className="flex items-center gap-4 group">
+            <a href="mailto:pdnsyamkumar@gmail.com" className="flex items-center gap-4 group hover:-translate-y-1 transition-transform duration-300">
               <div className="w-12 h-12 bg-white dark:bg-slate-800 rounded-full flex items-center justify-center border border-slate-200 dark:border-slate-700 shadow-sm group-hover:border-brand-purple group-hover:shadow-brand-purple/20 transition-all">
-                <FaEnvelope className="text-xl text-slate-700 dark:text-slate-300 group-hover:text-brand-purple transition-colors" />
+                <SiGmail className="text-xl text-slate-700 dark:text-slate-300 group-hover:text-[#EA4335] transition-colors" />
               </div>
               <div>
                 <p className="text-sm text-slate-500 dark:text-slate-400">Email</p>
@@ -139,7 +140,7 @@ export default function ContactSection() {
               href="https://linkedin.com"
               target="_blank"
               rel="noreferrer"
-              className="flex items-center gap-4 group"
+              className="flex items-center gap-4 group hover:-translate-y-1 transition-transform duration-300"
             >
               <div className="w-12 h-12 bg-white dark:bg-slate-800 rounded-full flex items-center justify-center border border-slate-200 dark:border-slate-700 shadow-sm group-hover:border-blue-500 group-hover:shadow-blue-500/20 transition-all">
                 <FaLinkedin className="text-xl text-slate-700 dark:text-slate-300 group-hover:text-blue-500 transition-colors" />
@@ -156,7 +157,7 @@ export default function ContactSection() {
               href="https://github.com/pdnsyamkumar-work"
               target="_blank"
               rel="noreferrer"
-              className="flex items-center gap-4 group"
+              className="flex items-center gap-4 group hover:-translate-y-1 transition-transform duration-300"
             >
               <div className="w-12 h-12 bg-white dark:bg-slate-800 rounded-full flex items-center justify-center border border-slate-200 dark:border-slate-700 shadow-sm group-hover:border-slate-900 dark:group-hover:border-white transition-all">
                 <FaGithub className="text-xl text-slate-700 dark:text-slate-300 group-hover:text-slate-900 dark:group-hover:text-white transition-colors" />
@@ -173,7 +174,7 @@ export default function ContactSection() {
               href="/Syam_Kumar_Resume.pdf"
               target="_blank"
               rel="noreferrer"
-              className="flex items-center gap-4 group"
+              className="flex items-center gap-4 group hover:-translate-y-1 transition-transform duration-300"
             >
               <div className="w-12 h-12 bg-white dark:bg-slate-800 rounded-full flex items-center justify-center border border-slate-200 dark:border-slate-700 shadow-sm group-hover:border-rose-500 group-hover:shadow-rose-500/20 transition-all">
                 <FaFilePdf className="text-xl text-slate-700 dark:text-slate-300 group-hover:text-rose-500 transition-colors" />
@@ -181,7 +182,7 @@ export default function ContactSection() {
               <div>
                 <p className="text-sm text-slate-500 dark:text-slate-400">Resume</p>
                 <span className="text-slate-900 dark:text-slate-200 font-medium group-hover:text-rose-500 transition-colors">
-                  Download Resume PDF
+                  Download Resume
                 </span>
               </div>
             </a>

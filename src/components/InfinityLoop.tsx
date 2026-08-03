@@ -140,9 +140,9 @@ export default function InfinityLoop() {
             {/* Node Label */}
             <motion.text
               x={node.x}
-              y={node.y > 200 ? node.y + 38 : node.y - 26}
+              y={node.y > 200 ? node.y + 42 : node.y - 30}
               textAnchor="middle"
-              className="text-lg font-bold text-slate-700 dark:text-slate-300 pointer-events-none select-none"
+              className="text-2xl font-bold text-slate-700 dark:text-slate-300 pointer-events-none select-none"
               fill="currentColor"
               animate={{
                 opacity: hoveredNode === node.id || node.highlight ? 1 : 0.7,

@@ -88,10 +88,10 @@ const Navbar = () => {
                 className="text-lg md:text-xl lg:text-2xl font-extrabold tracking-tight group flex items-center cursor-pointer"
               >
                 <span className="text-brand-peach group-hover:text-brand-purple transition-colors">
-                  Dola Naga{' '}
+                  Peraka{' '}
                 </span>
                 <span className="text-slate-900 dark:text-white transition-colors group-hover:text-brand-peach ml-1">
-                  Syam Kumar Peraka
+                  Dola Naga Syam Kumar
                 </span>
               </Link>
             </div>
