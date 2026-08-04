@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useRef } from 'react';
-import { FaEnvelope, FaLinkedin, FaGithub, FaFilePdf } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaFilePdf } from 'react-icons/fa';
 import { SiGmail } from 'react-icons/si';
 import { motion, AnimatePresence, useInView } from 'framer-motion';
 import confetti from 'canvas-confetti';
@@ -56,7 +56,7 @@ export default function ContactSection() {
 
   const handleSubmit = async (e?: React.FormEvent | React.MouseEvent) => {
     if (e && e.preventDefault) e.preventDefault();
-    
+
     setIsSubmitting(true);
     setErrorMsg('');
 
