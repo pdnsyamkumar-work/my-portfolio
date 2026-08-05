@@ -40,7 +40,7 @@ export default function ContactSection() {
             origin: { x: 1 },
             colors: ['#8b5cf6', '#f43f5e', '#10b981'],
           });
-        } catch (e) {
+        } catch (_e) {
           // Ignore confetti errors on unsupported mobile browsers
         }
 
@@ -49,7 +49,7 @@ export default function ContactSection() {
         }
       };
       frame();
-    } catch (error) {
+    } catch (_error) {
       // Safely ignore
     }
   };
@@ -82,7 +82,7 @@ export default function ContactSection() {
         const errorText = data.error ? String(data.error) : 'Failed to send message';
         setErrorMsg(`❌ ${errorText}`);
       }
-    } catch (err) {
+    } catch (_err) {
       setErrorMsg('❌ Network error. Please try again later.');
     } finally {
       setIsSubmitting(false);
@@ -124,7 +124,10 @@ export default function ContactSection() {
             Contact Information
           </h3>
           <div className="space-y-6">
-            <a href="mailto:pdnsyamkumar@gmail.com" className="flex items-center gap-4 group hover:-translate-y-1 transition-transform duration-300">
+            <a
+              href="mailto:pdnsyamkumar@gmail.com"
+              className="flex items-center gap-4 group hover:-translate-y-1 transition-transform duration-300"
+            >
               <div className="w-12 h-12 bg-white dark:bg-slate-800 rounded-full flex items-center justify-center border border-slate-200 dark:border-slate-700 shadow-sm group-hover:border-brand-purple group-hover:shadow-brand-purple/20 transition-all">
                 <SiGmail className="text-xl text-slate-700 dark:text-slate-300 group-hover:text-[#EA4335] transition-colors" />
               </div>
@@ -170,22 +173,32 @@ export default function ContactSection() {
               </div>
             </a>
 
-            <a
-              href="/Syam_Kumar_Resume.pdf"
-              target="_blank"
-              rel="noreferrer"
-              className="flex items-center gap-4 group hover:-translate-y-1 transition-transform duration-300"
-            >
+            <div className="flex items-center gap-4 group hover:-translate-y-1 transition-transform duration-300">
               <div className="w-12 h-12 bg-white dark:bg-slate-800 rounded-full flex items-center justify-center border border-slate-200 dark:border-slate-700 shadow-sm group-hover:border-rose-500 group-hover:shadow-rose-500/20 transition-all">
                 <FaFilePdf className="text-xl text-slate-700 dark:text-slate-300 group-hover:text-rose-500 transition-colors" />
               </div>
-              <div>
-                <p className="text-sm text-slate-500 dark:text-slate-400">Resume</p>
-                <span className="text-slate-900 dark:text-slate-200 font-medium group-hover:text-rose-500 transition-colors">
-                  Download Resume
-                </span>
+              <div className="flex flex-col">
+                <p className="text-sm text-slate-500 dark:text-slate-400 mb-1">Resume</p>
+                <div className="flex gap-3 items-center">
+                  <a
+                    href="/PDN_Syam_Kumar_SDET_II.pdf"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-sm font-semibold text-slate-900 dark:text-slate-200 hover:text-rose-500 dark:hover:text-rose-400 transition-colors relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-rose-500 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left"
+                  >
+                    View
+                  </a>
+                  <span className="text-slate-300 dark:text-slate-700">|</span>
+                  <a
+                    href="/PDN_Syam_Kumar_SDET_II.pdf"
+                    download
+                    className="text-sm font-semibold text-slate-900 dark:text-slate-200 hover:text-rose-500 dark:hover:text-rose-400 transition-colors relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-rose-500 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left"
+                  >
+                    Download
+                  </a>
+                </div>
               </div>
-            </a>
+            </div>
           </div>
         </motion.div>
 
@@ -328,7 +341,7 @@ export default function ContactSection() {
                 </p>
 
                 <p className="text-slate-600 dark:text-slate-300 mb-6">
-                  📬 I'll get back to you within 24 hours.
+                  📬 I&apos;ll get back to you within 24 hours.
                 </p>
 
                 <p className="text-lg font-semibold text-slate-800 dark:text-slate-200">

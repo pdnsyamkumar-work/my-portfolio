@@ -12,6 +12,16 @@ module.exports = {
         'brand-peach': '#f08b76',
         'brand-purple': '#7b4cbe',
       },
+      keyframes: {
+        heartbeat: {
+          '0%, 100%': { transform: 'scale(1)', color: 'rgba(255, 255, 255, 0.7)' },
+          '50%': { transform: 'scale(1.05)', color: '#ffffff' },
+        },
+      },
+      animation: {
+        'heartbeat': 'heartbeat 4s ease-in-out infinite',
+        'heartbeat-delayed': 'heartbeat 4s ease-in-out infinite 2s',
+      },
     },
   },
   plugins: [],
