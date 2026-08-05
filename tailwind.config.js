@@ -19,8 +19,8 @@ module.exports = {
         },
       },
       animation: {
-        'heartbeat': 'heartbeat 2s ease-in-out infinite',
-        'heartbeat-delayed': 'heartbeat 2s ease-in-out infinite 1s',
+        'heartbeat': 'heartbeat 4s ease-in-out infinite',
+        'heartbeat-delayed': 'heartbeat 4s ease-in-out infinite 2s',
       },
     },
   },

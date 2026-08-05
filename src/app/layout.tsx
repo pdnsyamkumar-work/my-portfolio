@@ -41,18 +41,18 @@ export default function RootLayout({
               <div className="w-full bg-gradient-to-r from-brand-purple to-brand-peach text-white text-center py-2.5 px-4 text-sm font-bold tracking-wide relative">
                 <div className="flex flex-col md:flex-row items-center justify-center md:gap-x-2 leading-relaxed md:leading-normal">
                   <span className="inline-block text-center">
-                    <span className="relative inline-flex h-3 w-3 shrink-0 mr-2 align-baseline translate-y-[1px]">
+                    <span className="relative inline-flex h-3 w-3 shrink-0 mr-3 align-baseline translate-y-[1px]">
                       <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                       <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500 shadow-[0_0_8px_rgba(34,197,94,1)]"></span>
                     </span>
-                    <span className="inline-block animate-heartbeat drop-shadow-[0_0_5px_rgba(255,255,255,0.8)]">
+                    <span className="inline-block animate-heartbeat drop-shadow-[0_0_5px_rgba(255,255,255,0.8)] origin-left">
                       OPEN TO NEW SDET Opportunities
                     </span>
                   </span>
                   <span className="hidden md:inline">|</span>
                   <Link
                     href="/#contact"
-                    className="inline-block underline hover:text-white/80 transition-colors animate-heartbeat-delayed drop-shadow-[0_0_5px_rgba(255,255,255,0.8)]"
+                    className="inline-block underline hover:text-white/80 transition-colors animate-heartbeat-delayed drop-shadow-[0_0_5px_rgba(255,255,255,0.8)] origin-left"
                   >
                     Let's build reliable Software Together!
                   </Link>
