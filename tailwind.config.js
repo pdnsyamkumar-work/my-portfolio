@@ -14,8 +14,8 @@ module.exports = {
       },
       keyframes: {
         heartbeat: {
-          '0%, 100%': { transform: 'scale(1)', color: 'inherit' },
-          '50%': { transform: 'scale(1.05)', color: '#4ade80' },
+          '0%, 100%': { transform: 'scale(1)', color: 'rgba(255, 255, 255, 0.7)' },
+          '50%': { transform: 'scale(1.05)', color: '#ffffff' },
         },
       },
       animation: {
