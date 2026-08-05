@@ -49,7 +49,7 @@ export default function RootLayout({
                       OPEN TO NEW SDET Opportunities
                     </span>
                   </span>
-                  <span className="hidden md:inline">|</span>
+                  <span className="hidden md:inline mx-4">|</span>
                   <Link
                     href="/#contact"
                     className="inline-block underline hover:text-white/80 transition-colors animate-heartbeat-delayed drop-shadow-[0_0_5px_rgba(255,255,255,0.8)] origin-left"
