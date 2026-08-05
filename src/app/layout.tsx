@@ -45,14 +45,14 @@ export default function RootLayout({
                       <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                       <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500 shadow-[0_0_8px_rgba(34,197,94,1)]"></span>
                     </span>
-                    <span className="animate-pulse drop-shadow-[0_0_5px_rgba(255,255,255,0.8)]">
+                    <span className="inline-block animate-heartbeat drop-shadow-[0_0_5px_rgba(255,255,255,0.8)]">
                       OPEN TO NEW SDET Opportunities
                     </span>
                   </span>
                   <span className="hidden md:inline">|</span>
                   <Link
                     href="/#contact"
-                    className="underline hover:text-white/80 transition-colors animate-pulse drop-shadow-[0_0_5px_rgba(255,255,255,0.8)]"
+                    className="inline-block underline hover:text-white/80 transition-colors animate-heartbeat-delayed drop-shadow-[0_0_5px_rgba(255,255,255,0.8)]"
                   >
                     Let's build reliable Software Together!
                   </Link>
