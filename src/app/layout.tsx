@@ -46,7 +46,7 @@ export default function RootLayout({
                       <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500 shadow-[0_0_8px_rgba(34,197,94,1)]"></span>
                     </span>
                     <span className="inline-block animate-heartbeat drop-shadow-[0_0_5px_rgba(255,255,255,0.8)] origin-left">
-                      OPEN TO NEW SDET Opportunities
+                      Open to New SDET Opportunities
                     </span>
                   </span>
                   <span className="hidden md:inline mx-4">|</span>
