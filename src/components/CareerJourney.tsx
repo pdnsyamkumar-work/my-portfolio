@@ -104,49 +104,75 @@ const journeyData = [
   },
   {
     id: 4,
+    title: 'Senior GIS Engineer',
+    company: (
+      <a
+        href="https://www.rmsi.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:underline hover:text-brand-purple transition-colors"
+      >
+        RMSI
+      </a>
+    ),
+    period: 'Jan 2022 - Mar 2023',
+    dotColor: 'bg-slate-400 dark:bg-slate-600',
+    dotGlow: '',
+    hasPing: false,
+    titleColor: 'text-brand-purple dark:text-brand-peach',
+    companyColor: 'text-brand-purple/70 dark:text-brand-peach/70',
+    details: [
+      'Worked as a Senior GIS Engineer at RMSI, capturing and maintaining high-quality road network data for Apple Maps. Actively triaged live map issues and delivered quick resolutions using FusionX, ensuring accuracy and reliability in navigation services.',
+    ],
+  },
+  {
+    id: 5,
     title: 'GIS Engineer',
     company: (
-      <>
-        <a
-          href="https://www.rmsi.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:underline hover:text-brand-purple transition-colors"
-        >
-          RMSI Pvt Ltd
-        </a>{' '}
-        |{' '}
-        <a
-          href="https://www.techmahindra.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:underline hover:text-brand-purple transition-colors"
-        >
-          Tech Mahindra
-        </a>{' '}
-        |{' '}
-        <a
-          href="https://www.cyient.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:underline hover:text-brand-purple transition-colors"
-        >
-          Cyient Ltd
-        </a>
-      </>
+      <a
+        href="https://www.techmahindra.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:underline hover:text-brand-purple transition-colors"
+      >
+        Tech Mahindra
+      </a>
     ),
-    period: 'Jul 2018 - Mar 2023',
+    period: 'Jun 2021 - Jan 2022',
     dotColor: 'bg-slate-300 dark:bg-slate-700',
     dotGlow: '',
     hasPing: false,
     titleColor: 'text-brand-purple dark:text-brand-peach',
     companyColor: 'text-brand-purple/70 dark:text-brand-peach/70',
     details: [
-      'Developed geospatial solutions for autonomous vehicles (Apple Maps, Go Hunt, TomTom Maps), including HD lane mapping and 3D road network modeling using ArcGIS, QGIS, Cartopia, and FusionX.',
+      'Worked as a GIS Engineer at Tech Mahindra, capturing and designing rural road networks using QGIS and ArcGIS for the GoHunt client. Delivered high-accuracy geospatial mapping solutions to improve navigation and ensure safe access to remote hunting areas.',
     ],
   },
   {
-    id: 5,
+    id: 6,
+    title: 'Junior GIS Engineer',
+    company: (
+      <a
+        href="https://www.cyient.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:underline hover:text-brand-purple transition-colors"
+      >
+        Cyient Ltd
+      </a>
+    ),
+    period: 'Jul 2018 - Apr 2021',
+    dotColor: 'bg-slate-300 dark:bg-slate-700',
+    dotGlow: '',
+    hasPing: false,
+    titleColor: 'text-brand-purple dark:text-brand-peach',
+    companyColor: 'text-brand-purple/70 dark:text-brand-peach/70',
+    details: [
+      'As a Junior GIS Engineer at Cyient Ltd, I was responsible for creating and maintaining road network geometries, including the integration of lane-level information, traffic signs, and address data within those networks. A significant focus of my work was on lane mapping to support autonomous vehicle (driverless car) navigation systems. I primarily used custom tools such as Cartopia for capturing and maintaining geospatial data, along with satellite imagery, probe images, and street-level views to ensure high precision in road and lane identification. In addition to data production, I actively contributed to quality assurance efforts, especially during critical delivery phases. I worked closely with the team to ensure timely, accurate, and high-quality deliverables, helping meet tight deadlines without compromising on data integrity.',
+    ],
+  },
+  {
+    id: 7,
     title: 'Bio-Medical Service Engineer',
     company: 'Prime Agencies',
     period: 'Jan 2017 - May 2018',
