@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <title>SK</title>
+  <desc>An Playwright SDET</desc>
+  <defs>
+    <linearGradient id="brand-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7b4cbe" />
+      <stop offset="100%" stop-color="#f08b76" />
+    </linearGradient>
+  </defs>
+  <rect width="256" height="256" rx="64" fill="url(#brand-grad)" />
+  <text x="50%" y="55%" font-family="system-ui, -apple-system, sans-serif" font-size="120" font-weight="900" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">
+    SK
+  </text>
+  <text x="50%" y="82%" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="600" fill="#ffffff" text-anchor="middle" opacity="0.9">
+    PLAYWRIGHT SDET
+  </text>
+</svg>
