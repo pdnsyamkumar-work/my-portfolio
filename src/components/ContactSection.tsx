@@ -181,7 +181,7 @@ export default function ContactSection() {
                 <p className="text-sm text-slate-500 dark:text-slate-400 mb-1">Resume</p>
                 <div className="flex gap-3 items-center">
                   <a
-                    href="/PDN_Syam_Kumar_SDET_II.pdf"
+                    href="/PDN_Syam_Kumar_SDET_II.pdf?v=2"
                     target="_blank"
                     rel="noreferrer"
                     className="text-sm font-semibold text-slate-900 dark:text-slate-200 hover:text-rose-500 dark:hover:text-rose-400 transition-colors relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-rose-500 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left"
@@ -190,7 +190,7 @@ export default function ContactSection() {
                   </a>
                   <span className="text-slate-300 dark:text-slate-700">|</span>
                   <a
-                    href="/PDN_Syam_Kumar_SDET_II.pdf"
+                    href="/PDN_Syam_Kumar_SDET_II.pdf?v=2"
                     download
                     className="text-sm font-semibold text-slate-900 dark:text-slate-200 hover:text-rose-500 dark:hover:text-rose-400 transition-colors relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-rose-500 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left"
                   >
