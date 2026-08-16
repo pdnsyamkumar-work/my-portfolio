@@ -59,7 +59,7 @@ const journeyData = [
       </>
     ),
     period: 'May 2025 - Mar 2026',
-    dotColor: 'bg-brand-purple/70',
+    dotColor: 'bg-brand-purple',
     dotGlow: '',
     hasPing: false,
     titleColor: 'text-brand-purple dark:text-brand-peach',
@@ -90,7 +90,7 @@ const journeyData = [
       </>
     ),
     period: 'Mar 2023 - Apr 2024',
-    dotColor: 'bg-slate-400 dark:bg-slate-600',
+    dotColor: 'bg-brand-purple',
     dotGlow: '',
     hasPing: false,
     titleColor: 'text-brand-purple dark:text-brand-peach',
@@ -116,7 +116,7 @@ const journeyData = [
       </a>
     ),
     period: 'Jan 2022 - Mar 2023',
-    dotColor: 'bg-slate-400 dark:bg-slate-600',
+    dotColor: 'bg-brand-purple',
     dotGlow: '',
     hasPing: false,
     titleColor: 'text-brand-purple dark:text-brand-peach',
@@ -139,7 +139,7 @@ const journeyData = [
       </a>
     ),
     period: 'Jun 2021 - Jan 2022',
-    dotColor: 'bg-slate-300 dark:bg-slate-700',
+    dotColor: 'bg-brand-purple',
     dotGlow: '',
     hasPing: false,
     titleColor: 'text-brand-purple dark:text-brand-peach',
@@ -162,7 +162,7 @@ const journeyData = [
       </a>
     ),
     period: 'Jul 2018 - Apr 2021',
-    dotColor: 'bg-slate-300 dark:bg-slate-700',
+    dotColor: 'bg-brand-purple',
     dotGlow: '',
     hasPing: false,
     titleColor: 'text-brand-purple dark:text-brand-peach',
@@ -176,7 +176,7 @@ const journeyData = [
     title: 'Bio-Medical Service Engineer',
     company: 'Prime Agencies',
     period: 'Jan 2017 - May 2018',
-    dotColor: 'bg-slate-300 dark:bg-slate-800',
+    dotColor: 'bg-brand-purple',
     dotGlow: '',
     hasPing: false,
     titleColor: 'text-brand-purple dark:text-brand-peach',
