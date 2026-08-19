@@ -163,7 +163,7 @@ const skillsData: Skill[] = [
   { name: 'Git', category: ['All', 'DevOps & Tools'], icon: <SiGit className="text-orange-500" /> },
   {
     name: 'Postman',
-    category: ['All', 'DevOps & Tools'],
+    category: ['All', 'API & Functional'],
     icon: <SiPostman className="text-orange-500" />,
   },
   {
