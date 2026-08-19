@@ -29,6 +29,7 @@ import {
   FaRobot,
   FaCode,
   FaSalesforce,
+  FaLinux,
 } from 'react-icons/fa';
 import { useSkillHover, SkillCategory } from '@/context/SkillHoverContext';
 
@@ -162,7 +163,7 @@ const skillsData: Skill[] = [
   { name: 'Git', category: ['All', 'DevOps & Tools'], icon: <SiGit className="text-orange-500" /> },
   {
     name: 'Postman',
-    category: ['All', 'DevOps & Tools'],
+    category: ['All', 'API & Functional'],
     icon: <SiPostman className="text-orange-500" />,
   },
   {
@@ -175,6 +176,7 @@ const skillsData: Skill[] = [
     category: ['All', 'DevOps & Tools'],
     icon: <VscAzureDevops className="text-blue-600" />,
   },
+  { name: 'Linux', category: ['All', 'DevOps & Tools'], icon: <FaLinux className="text-slate-800 dark:text-slate-200" /> },
 
   // IDE Tools
   { name: 'VS Code', category: ['All', 'IDE Tools'], icon: <FaCode className="text-blue-500" /> },
