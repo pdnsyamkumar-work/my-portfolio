@@ -14,6 +14,9 @@ export const metadata: Metadata = {
   title: 'Syam Kumar | SDET II | Automation Engineer',
   description:
     'Portfolio of Syam Kumar, a Software Development Engineer in Test (SDET II) specializing in Test Automation, Playwright, API Testing, and CI/CD.',
+  icons: {
+    icon: '/syam-portfolio-favicon.png',
+  },
   keywords: [
     'Playwright Automation Engineer',
     'QA Automation Engineer',

@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import ThemeToggle from './ThemeToggle';
@@ -87,6 +88,14 @@ const Navbar = () => {
                 onClick={(e) => handleLinkClick(e, '#home')}
                 className="text-lg md:text-xl lg:text-2xl font-extrabold tracking-tight group flex items-center cursor-pointer"
               >
+                <Image
+                  src="/syam-portfolio-logo.png"
+                  alt="Syam Kumar"
+                  width={48}
+                  height={48}
+                  className="mr-3 h-12 w-12 shrink-0"
+                  priority
+                />
                 <span className="text-brand-peach group-hover:text-brand-purple transition-colors">
                   Peraka{' '}
                 </span>
