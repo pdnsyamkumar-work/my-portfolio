@@ -6,6 +6,7 @@ import {
   SiTypescript,
   SiGraphql,
   SiGithubactions,
+  SiBitbucket,
   SiGit,
   SiPostman,
   SiJira,
@@ -175,6 +176,11 @@ const skillsData: Skill[] = [
     name: 'Azure DevOps',
     category: ['All', 'DevOps & Tools'],
     icon: <VscAzureDevops className="text-blue-600" />,
+  },
+  {
+    name: 'Bitbucket',
+    category: ['All', 'DevOps & Tools'],
+    icon: <SiBitbucket color="#8BC34A" aria-label="Bitbucket" />,
   },
   { name: 'Linux', category: ['All', 'DevOps & Tools'], icon: <FaLinux className="text-slate-800 dark:text-slate-200" /> },
 

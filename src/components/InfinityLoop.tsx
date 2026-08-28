@@ -47,6 +47,12 @@ export default function InfinityLoop() {
             <stop offset="75%" stopColor="#d946ef" />
             <stop offset="100%" stopColor="#06b6d4" />
           </linearGradient>
+          <radialGradient id="runnerGradient" cx="35%" cy="30%" r="70%">
+            <stop offset="0%" stopColor="#ffffff" />
+            <stop offset="32%" stopColor="#f0abfc" />
+            <stop offset="68%" stopColor="#a855f7" />
+            <stop offset="100%" stopColor="#06b6d4" />
+          </radialGradient>
           <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
             <feGaussianBlur stdDeviation="8" result="blur" />
             <feComposite in="SourceGraphic" in2="blur" operator="over" />
@@ -76,10 +82,8 @@ export default function InfinityLoop() {
           style={{ filter: 'url(#glow)' }}
         />
 
-        {/* Continuous moving particle */}
-        <motion.circle
-          r="6"
-          fill="#fff"
+        {/* Continuous moving automation beacon */}
+        <motion.g
           style={
             {
               filter: 'url(#glow)',
@@ -94,7 +98,20 @@ export default function InfinityLoop() {
             repeat: Infinity,
             ease: 'linear',
           }}
-        />
+        >
+          <circle r="14" fill="#a855f7" opacity="0.22" />
+          <motion.circle
+            r="9"
+            fill="none"
+            stroke="#f5d0fe"
+            strokeWidth="1.5"
+            strokeDasharray="4 3"
+            animate={{ rotate: 360 }}
+            transition={{ duration: 2.2, repeat: Infinity, ease: 'linear' }}
+          />
+          <circle r="6" fill="url(#runnerGradient)" />
+          <circle cx="-2" cy="-2" r="1.8" fill="#fff" />
+        </motion.g>
 
         {/* Nodes */}
         {nodes.map((node) => (

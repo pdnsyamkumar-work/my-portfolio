@@ -4,7 +4,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import ThemeToggle from './ThemeToggle';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Navbar = () => {
@@ -78,7 +77,7 @@ const Navbar = () => {
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, ease: [0.4, 0, 0.2, 1] }}
-        className={`relative w-full z-40 transition-all duration-300 ${hasScrolled ? 'py-2 bg-white/90 dark:bg-[#1e2029]/90 backdrop-blur-md' : 'py-4 bg-transparent'}`}
+        className={`relative w-full z-40 transition-all duration-300 ${hasScrolled ? 'py-2 bg-[#1e2029]/90 backdrop-blur-md' : 'py-4 bg-transparent'}`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
@@ -126,14 +125,10 @@ const Navbar = () => {
                   </Link>
                 );
               })}
-              <div className="pl-4 border-l border-slate-200 dark:border-slate-700">
-                <ThemeToggle />
-              </div>
             </div>
 
             {/* Mobile Menu Button */}
             <div className="flex lg:hidden items-center gap-4">
-              <ThemeToggle />
               <button
                 onClick={() => setIsMobileMenuOpen(true)}
                 className="text-slate-900 dark:text-white p-2 focus:outline-none"
@@ -161,7 +156,7 @@ const Navbar = () => {
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
               transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-              className="fixed top-0 right-0 h-full w-64 bg-white dark:bg-slate-900 shadow-2xl z-50 lg:hidden flex flex-col pt-20 px-6"
+              className="fixed top-0 right-0 h-full w-64 bg-slate-900 shadow-2xl z-50 lg:hidden flex flex-col pt-20 px-6"
             >
               <button
                 onClick={() => setIsMobileMenuOpen(false)}

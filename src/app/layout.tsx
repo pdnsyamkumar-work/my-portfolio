@@ -4,7 +4,6 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import { ThemeProvider } from '@/components/ThemeProvider';
 import { SkillHoverProvider } from '@/context/SkillHoverContext';
 import HeroBackground from '@/components/HeroBackground';
 
@@ -31,13 +30,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className="dark">
       <body
-        className={`${inter.className} min-h-screen flex flex-col bg-slate-50 text-slate-900 dark:bg-[#1e2029] dark:text-slate-50 transition-colors duration-300`}
+        className={`${inter.className} min-h-screen flex flex-col bg-[#1e2029] text-slate-50`}
       >
         <SkillHoverProvider>
-          <ThemeProvider>
-            <HeroBackground />
+          <HeroBackground />
             {/* Sticky Header Container */}
             <div className="sticky top-0 z-50 flex flex-col w-full shadow-md">
               {/* Global Opportunities Banner */}
@@ -57,15 +55,14 @@ export default function RootLayout({
                     href="/#contact"
                     className="inline-block underline hover:text-white/80 transition-colors animate-heartbeat-delayed drop-shadow-[0_0_5px_rgba(255,255,255,0.8)] origin-left"
                   >
-                    Let's build reliable Software Together!
+                    Let&apos;s build reliable Software Together!
                   </Link>
                 </div>
               </div>
               <Navbar />
             </div>
             <main className="flex-grow relative z-10">{children}</main>
-            <Footer />
-          </ThemeProvider>
+          <Footer />
         </SkillHoverProvider>
       </body>
     </html>
