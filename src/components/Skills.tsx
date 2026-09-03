@@ -10,6 +10,7 @@ import {
   SiGit,
   SiPostman,
   SiJira,
+  SiGrafana,
 } from 'react-icons/si';
 import { VscAzureDevops } from 'react-icons/vsc';
 import {
@@ -153,6 +154,11 @@ const skillsData: Skill[] = [
     name: 'Load Testing',
     category: ['All', 'API & Functional'],
     icon: <FaWeightHanging className="text-red-400" />,
+  },
+  {
+    name: 'Grafana k6',
+    category: ['All', 'API & Functional'],
+    icon: <SiGrafana className="text-orange-500" />,
   },
 
   // DevOps & Tools
