@@ -51,10 +51,10 @@ export default function AboutSection() {
               applications.
             </p>
             <p>
-              I specialize in designing reliable, high-performance test systems that reduce regression
-              time, improve release confidence, and eliminate flaky tests. I have successfully
-              delivered modular automation frameworks that reduced regression cycles by 40%, achieved
-              85% test coverage, and accelerated defect resolution by 30% through{' '}
+              I specialize in designing reliable, high-performance test systems that reduce
+              regression time, improve release confidence, and eliminate flaky tests. I have
+              successfully delivered modular automation frameworks that reduced regression cycles by
+              40%, achieved 85% test coverage, and accelerated defect resolution by 30% through{' '}
               <strong className="text-brand-purple">CI/CD-integrated testing</strong>.
             </p>
             <p>
@@ -64,13 +64,13 @@ export default function AboutSection() {
               thinking.
             </p>
             <p>
-              Overall, I bring <strong className="text-brand-purple">8.6+</strong> years of
+              Overall, I bring <strong className="text-brand-purple">8.7+</strong> years of
               professional experience, combining domain expertise with modern test engineering
               practices.
             </p>
             <p>
-              I focus on building automation that empowers teams — not just finding bugs, but enabling
-              faster, more reliable software delivery.
+              I focus on building automation that empowers teams — not just finding bugs, but
+              enabling faster, more reliable software delivery.
             </p>
           </div>
         </motion.div>
@@ -95,16 +95,28 @@ export default function AboutSection() {
           </h3>
           <div className="space-y-4 text-slate-600 dark:text-slate-300 leading-relaxed text-sm lg:text-base">
             <p>
-              Beyond writing test cases, I see quality as a core part of engineering — not a phase. I approach testing with a <strong className="text-brand-purple">systems mindset</strong>, focusing on building scalable solutions that prevent issues rather than just detecting them.
+              Beyond writing test cases, I see quality as a core part of engineering — not a phase.
+              I approach testing with a{' '}
+              <strong className="text-brand-purple">systems mindset</strong>, focusing on building
+              scalable solutions that prevent issues rather than just detecting them.
             </p>
             <p>
-              I enjoy designing automation that integrates seamlessly into development workflows, enabling faster feedback, stable releases, and confident deployments. To me, testing is most effective when it empowers developers, not slows them down.
+              I enjoy designing automation that integrates seamlessly into development workflows,
+              enabling faster feedback, stable releases, and confident deployments. To me, testing
+              is most effective when it empowers developers, not slows them down.
             </p>
             <p>
-              With experience across both manual and automated testing, I understand where human insight matters and where automation delivers the most value. I aim to strike the right balance between <strong className="text-brand-purple">exploratory thinking</strong> and high-speed, reliable <strong className="text-brand-purple">automation</strong>.
+              With experience across both manual and automated testing, I understand where human
+              insight matters and where automation delivers the most value. I aim to strike the
+              right balance between{' '}
+              <strong className="text-brand-purple">exploratory thinking</strong> and high-speed,
+              reliable <strong className="text-brand-purple">automation</strong>.
             </p>
             <p>
-              Outside of building frameworks and debugging pipelines, I’m constantly exploring better ways to improve quality — from modern test architecture to <strong className="text-brand-purple">CI/CD practices</strong> and developer experience.
+              Outside of building frameworks and debugging pipelines, I’m constantly exploring
+              better ways to improve quality — from modern test architecture to{' '}
+              <strong className="text-brand-purple">CI/CD practices</strong> and developer
+              experience.
             </p>
           </div>
         </motion.div>
