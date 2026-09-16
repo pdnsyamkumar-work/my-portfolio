@@ -6,20 +6,20 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
+const navLinks = [
+  { name: 'Home', path: '#home' },
+  { name: 'About', path: '#about' },
+  { name: 'Achievements', path: '#achievements' },
+  { name: 'Career', path: '#career' },
+  { name: 'Skills', path: '#skills' },
+  { name: 'Projects', path: '#projects' },
+  { name: 'Contact', path: '#contact' },
+];
+
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState('home');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [hasScrolled, setHasScrolled] = useState(false);
-
-  const navLinks = [
-    { name: 'Home', path: '#home' },
-    { name: 'About', path: '#about' },
-    { name: 'Achievements', path: '#achievements' },
-    { name: 'Career', path: '#career' },
-    { name: 'Skills', path: '#skills' },
-    { name: 'Projects', path: '#projects' },
-    { name: 'Contact', path: '#contact' },
-  ];
 
   useEffect(() => {
     const handleScroll = () => {

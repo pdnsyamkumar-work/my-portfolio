@@ -40,7 +40,7 @@ export default function ContactSection() {
             origin: { x: 1 },
             colors: ['#8b5cf6', '#f43f5e', '#10b981'],
           });
-        } catch (_e) {
+        } catch {
           // Ignore confetti errors on unsupported mobile browsers
         }
 
@@ -49,7 +49,7 @@ export default function ContactSection() {
         }
       };
       frame();
-    } catch (_error) {
+    } catch {
       // Safely ignore
     }
   };
@@ -82,7 +82,7 @@ export default function ContactSection() {
         const errorText = data.error ? String(data.error) : 'Failed to send message';
         setErrorMsg(`❌ ${errorText}`);
       }
-    } catch (_err) {
+    } catch {
       setErrorMsg('❌ Network error. Please try again later.');
     } finally {
       setIsSubmitting(false);
@@ -140,7 +140,7 @@ export default function ContactSection() {
             </a>
 
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/dola-naga-syam-kumar-peraka-135b4b14a/"
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-4 group hover:-translate-y-1 transition-transform duration-300"

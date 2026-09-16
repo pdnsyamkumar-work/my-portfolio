@@ -8,22 +8,29 @@ const achievements = [
   { value: 40, suffix: '%', label: 'Regression Cycle Reduction' },
   { value: 3, suffix: 'X', label: 'Execution Speed Improvement' },
   { value: 30, suffix: '%', label: 'Faster Defect Resolution' },
-  { value: 3.7, suffix: '+', label: 'Relavent Years Exp.', isFloat: true },
+  { value: 3.7, suffix: '+', label: 'Relevant Years Exp.', isFloat: true },
   { value: 100, suffix: '+', label: 'Automated Test Cases' },
   { value: 'CI/CD', suffix: '', label: 'Integrated Validation Pipelines', isString: true },
   { value: 'Framework', suffix: '', label: 'Built Modular Playwright Framework', isString: true },
 ];
 
-const Counter = ({ value, isFloat = false, isString = false, suffix }: any) => {
+interface CounterProps {
+  value: number | string;
+  isFloat?: boolean;
+  isString?: boolean;
+  suffix?: string;
+}
+
+const Counter = ({ value, isFloat = false, isString = false, suffix = '' }: CounterProps) => {
   const [count, setCount] = useState(0);
-  const ref = useRef(null);
+  const ref = useRef<HTMLSpanElement>(null);
   const isInView = useInView(ref, { once: true, margin: '-50px' });
 
   useEffect(() => {
     if (!isInView || isString) return;
 
     let start = 0;
-    const end = parseFloat(value);
+    const end = typeof value === 'number' ? value : parseFloat(value);
     const duration = 2000;
     const increment = end / (duration / 16);
 

@@ -58,7 +58,7 @@ const journeyData = [
         | Clients: One Health Assist, Hoichoi TV, eGain, Celito Tech
       </>
     ),
-    period: 'May 2025 - Mar 2026',
+    period: 'Apr 2024 - Mar 2026',
     dotColor: 'bg-brand-purple',
     dotGlow: '',
     hasPing: false,
@@ -234,7 +234,6 @@ export default function CareerJourney() {
               const isSelected = selectedId === job.id;
               // Allow inline auto-expand on hover even if right panel is open
               const isHoverExpanded = hoveredId === job.id;
-              const isExpanded = isSelected || isHoverExpanded;
 
               return (
                 <motion.div
@@ -271,18 +270,18 @@ export default function CareerJourney() {
                     <div className="flex justify-between items-center">
                       <div className="pr-4">
                         <h3
-                          className={`text-xl font-bold text-slate-900 dark:text-slate-200 group-hover:${job.titleColor} transition-colors ${isSelected ? job.titleColor : ''}`}
+                          className={`text-xl font-bold transition-colors ${isSelected ? 'text-brand-purple dark:text-brand-peach' : 'text-slate-900 dark:text-slate-200 group-hover:text-brand-purple dark:group-hover:text-brand-peach'}`}
                         >
                           {job.title}
                         </h3>
-                        <p className={`${job.companyColor} font-semibold text-sm mb-1`}>
+                        <p className="text-brand-purple/90 dark:text-brand-peach/90 font-semibold text-sm mb-1">
                           {job.company} | {renderPeriod(job.period)}
                         </p>
                       </div>
 
                       {/* Chevron Arrow */}
                       <div
-                        className={`text-slate-400 group-hover:${job.titleColor} transition-transform duration-300 ml-2 shrink-0 ${isSelected ? 'rotate-0 text-brand-purple' : 'rotate-0'}`}
+                        className={`transition-transform duration-300 ml-2 shrink-0 ${isSelected ? 'rotate-0 text-brand-purple' : 'rotate-0 text-slate-400 group-hover:text-brand-purple dark:group-hover:text-brand-peach'}`}
                       >
                         {isSplitView ? (
                           <FaChevronRight className={isSelected ? 'text-brand-purple' : ''} />

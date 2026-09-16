@@ -1,7 +1,7 @@
 'use client';
 
 import { motion, Variants } from 'framer-motion';
-import { useState } from 'react';
+import { useState, type CSSProperties } from 'react';
 
 const nodes = [
   { id: 'plan', label: 'Plan', x: 266, y: 100, color: '#8b5cf6' },
@@ -88,7 +88,7 @@ export default function InfinityLoop() {
             {
               filter: 'url(#glow)',
               offsetPath: `path("${drawPath}")`,
-            } as any
+            } as CSSProperties
           }
           animate={{
             offsetDistance: ['0%', '100%'],
@@ -199,13 +199,7 @@ export default function InfinityLoop() {
         ))}
 
         {/* Center Content in SVG to perfectly scale with nodes (placed here to render ON TOP of the loop) */}
-        <foreignObject
-          x="100"
-          y="90"
-          width="600"
-          height="220"
-          className="pointer-events-none z-10"
-        >
+        <foreignObject x="100" y="90" width="600" height="220" className="pointer-events-none z-10">
           <div className="flex flex-col items-center justify-center w-full h-full p-4">
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
@@ -220,7 +214,10 @@ export default function InfinityLoop() {
                 Syam Kumar
               </h2>
               <div className="text-blue-600 dark:text-blue-400 font-bold text-lg text-center flex flex-wrap justify-center gap-x-2 gap-y-1 mt-1 leading-snug">
-                <span>SDET</span> <span className="opacity-40">|</span> <span>Playwright</span> <span className="opacity-40">|</span> <span>TypeScript</span> <span className="opacity-40">|</span> <span>REST & GraphQL</span> <span className="opacity-40">|</span> <span>CI/CD</span>
+                <span>SDET</span> <span className="opacity-40">|</span> <span>Playwright</span>{' '}
+                <span className="opacity-40">|</span> <span>TypeScript</span>{' '}
+                <span className="opacity-40">|</span> <span>REST & GraphQL</span>{' '}
+                <span className="opacity-40">|</span> <span>CI/CD</span>
               </div>
             </motion.div>
           </div>

@@ -27,7 +27,7 @@ export default function Home() {
           </h3>
 
           <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight text-slate-900 dark:text-white">
-            <span className="block">👋 I'm Syam</span>
+            <span className="block">👋 I&apos;m Syam</span>
             <span className="block text-slate-800 dark:text-white">Kumar</span>
           </h1>
 

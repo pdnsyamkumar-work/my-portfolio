@@ -25,10 +25,8 @@ import {
   FaSyncAlt,
   FaShieldAlt,
   FaArrowLeft,
-  FaTv,
   FaFileCode,
   FaProjectDiagram,
-  FaRobot,
   FaCode,
   FaSalesforce,
   FaLinux,
@@ -74,6 +72,27 @@ const CursorIcon = () => (
   </svg>
 );
 
+const PlaywrightIcon = () => (
+  <svg viewBox="0 0 36 36" className="w-5 h-5">
+    <path
+      fill="#2EAD33"
+      d="M17.4 8.5C11.5 8.5 6.7 13.3 6.7 19.2c0 2.6.9 4.9 2.5 6.7.4-.5.9-.9 1.4-1.3-.9-1.5-1.4-3.3-1.4-5.4 0-4.6 3.7-8.3 8.3-8.3 2 0 3.8.7 5.2 1.9.4-.5.8-.9 1.3-1.3-1.7-1.9-4-3-6.6-3z"
+    />
+    <path
+      fill="#E62E2D"
+      d="M21.5 12.3c-4.4 0-8 3.6-8 8 0 2.2.9 4.2 2.3 5.6.8-.7 1.7-1.2 2.7-1.5-1.5-1-2.5-2.6-2.5-4.5 0-3.1 2.5-5.5 5.5-5.5 1.5 0 2.9.6 3.9 1.6.8-.7 1.7-1.3 2.7-1.7-1.8-1.5-4.1-2.5-6.6-2.5z"
+    />
+    <path
+      fill="#45BA4B"
+      d="M26.2 18.5c-.8.5-1.6 1.1-2.3 1.8 1 1 1.6 2.3 1.6 3.8 0 2.9-2.4 5.3-5.3 5.3-1.2 0-2.3-.4-3.2-1.1-.9.4-1.7 1-2.4 1.7 1.6 1.3 3.6 2 5.7 2 5.1 0 9.2-4.1 9.2-9.2 0-1.7-.5-3.2-1.3-4.5z"
+    />
+    <path
+      fill="#F04E38"
+      d="M29.5 22.5c-.7.5-1.5 1-2.3 1.5.6.9.9 2 .9 3.2 0 3.3-2.7 6-6 6-1.5 0-2.8-.5-3.9-1.4-.8.5-1.6 1-2.5 1.4 1.8 1.5 4 2.4 6.4 2.4 5.8 0 10.5-4.7 10.5-10.5 0-1-.2-1.8-.5-2.6z"
+    />
+  </svg>
+);
+
 interface Skill {
   name: string;
   category: Category[];
@@ -100,13 +119,7 @@ const skillsData: Skill[] = [
   {
     name: 'Playwright',
     category: ['All', 'Automation'],
-    icon: (
-      <img
-        src="https://playwright.dev/img/playwright-logo.svg"
-        alt="Playwright"
-        className="w-5 h-5"
-      />
-    ),
+    icon: <PlaywrightIcon />,
   },
   {
     name: 'Test Architecture',
@@ -188,7 +201,11 @@ const skillsData: Skill[] = [
     category: ['All', 'DevOps & Tools'],
     icon: <SiBitbucket color="#8BC34A" aria-label="Bitbucket" />,
   },
-  { name: 'Linux', category: ['All', 'DevOps & Tools'], icon: <FaLinux className="text-slate-800 dark:text-slate-200" /> },
+  {
+    name: 'Linux',
+    category: ['All', 'DevOps & Tools'],
+    icon: <FaLinux className="text-slate-800 dark:text-slate-200" />,
+  },
 
   // IDE Tools
   { name: 'VS Code', category: ['All', 'IDE Tools'], icon: <FaCode className="text-blue-500" /> },
@@ -238,9 +255,11 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="py-20 px-4 sm:px-8 lg:px-20 max-w-7xl mx-auto w-full z-10 relative"
+      className="py-20 px-4 sm:px-8 lg:px-20 max-w-7xl mx-auto w-full z-10 relative scroll-mt-24"
     >
-      <h2 className="text-3xl font-bold text-white mb-8">Skills</h2>
+      <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white mb-10 text-center flex items-center justify-center gap-3">
+        <span>🛠️</span> Core <span className="text-brand-purple">Skills</span>
+      </h2>
 
       {/* Category Filter */}
       <div className="flex flex-wrap justify-center gap-2 mb-12 bg-white/50 dark:bg-slate-800/60 p-2 rounded-2xl backdrop-blur-sm border border-slate-200 dark:border-transparent transition-colors duration-300">
