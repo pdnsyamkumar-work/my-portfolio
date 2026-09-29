@@ -8,7 +8,7 @@ const achievements = [
   { value: 40, suffix: '%', label: 'Regression Cycle Reduction' },
   { value: 3, suffix: 'X', label: 'Execution Speed Improvement' },
   { value: 30, suffix: '%', label: 'Faster Defect Resolution' },
-  { value: 3.7, suffix: '+', label: 'Relevant Years Exp.', isFloat: true },
+  { value: 3.8, suffix: '+', label: 'Relevant Years Exp.', isFloat: true },
   { value: 100, suffix: '+', label: 'Automated Test Cases' },
   { value: 'CI/CD', suffix: '', label: 'Integrated Validation Pipelines', isString: true },
   { value: 'Framework', suffix: '', label: 'Built Modular Playwright Framework', isString: true },

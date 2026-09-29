@@ -44,7 +44,7 @@ export default function AboutSection() {
           <div className="space-y-4 text-slate-600 dark:text-slate-300 leading-relaxed text-sm lg:text-base">
             <p>
               Software Development Engineer in Test (SDET) with{' '}
-              <strong className="text-brand-purple">3.7+</strong> years of hands-on experience in
+              <strong className="text-brand-purple">3.8+</strong> years of hands-on experience in
               building scalable automation frameworks using{' '}
               <strong className="text-brand-purple">Playwright</strong> and{' '}
               <strong className="text-brand-purple">TypeScript</strong> for web and API
@@ -64,7 +64,7 @@ export default function AboutSection() {
               thinking.
             </p>
             <p>
-              Overall, I bring <strong className="text-brand-purple">8.7+</strong> years of
+              Overall, I bring <strong className="text-brand-purple">8.8+</strong> years of
               professional experience, combining domain expertise with modern test engineering
               practices.
             </p>
